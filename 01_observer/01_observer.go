@@ -14,7 +14,7 @@ import (
 	- WhatToDo()
 */
 
-// 抽象出层
+// ----- 抽象层 -----
 type Notifier interface {
 	Attach(obs Observer)
 	Detach(obs Observer)
@@ -25,7 +25,7 @@ type Observer interface {
 	WhatToDo()
 }
 
-// 实现层
+// ----- 实现层 -----
 type Monitor struct {
 	listeners []Observer
 }
@@ -65,3 +65,6 @@ func (ls *Lisi) Doing() {
 func (ls *Lisi) WhatToDo() {
 	fmt.Println("lisi 停止抄作业")
 }
+
+// ----- 业务逻辑层 -----
+// 在测试文件中

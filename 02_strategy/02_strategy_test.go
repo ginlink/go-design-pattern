@@ -5,6 +5,8 @@ import (
 )
 
 func TestStrategy(t *testing.T) {
+	// ----- 业务逻辑层 -----
+
 	hero := Hero{}
 
 	// 使用小刀

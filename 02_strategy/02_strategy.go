@@ -8,12 +8,12 @@ import "fmt"
 - 策略可以被设置
 */
 
-// 抽象层
+// ----- 抽象层 -----
 type Strategy interface {
 	UseWeapon()
 }
 
-// 实现层
+// ----- 实现层 -----
 type Knife struct{}
 
 func (nf *Knife) UseWeapon() {
@@ -37,4 +37,5 @@ func (h *Hero) Fight() {
 	h.s.UseWeapon()
 }
 
-// 业务逻辑层
+// ----- 业务逻辑层 -----
+// 在测试文件中

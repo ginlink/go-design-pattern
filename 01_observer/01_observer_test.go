@@ -6,6 +6,8 @@ import (
 )
 
 func TestObserver(t *testing.T) {
+	// ----- 业务逻辑层 -----
+
 	// 初始化观察者
 	zs := &Zhangsan{}
 	ls := &Lisi{}
